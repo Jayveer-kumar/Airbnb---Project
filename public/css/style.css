@@ -1,0 +1,271 @@
+ 
+
+body{  
+  font-family: "Plus Jakarta Sans", sans-serif !important; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    background-color: white;    
+}
+.fa-compass{
+    font-size: 2rem;
+    color:#fe424d;
+}
+.add-btn{
+    background-color:#fe424d !important;
+    border:none !important;
+}
+.nav-link{
+    color:#222222 !important;
+}
+
+/* Navbar Search stylling */
+.search-input{
+    margin:0 5px;
+    border-radius: 25px !important;
+    padding:0 2em !important;
+    font-size: 0.9em !important;
+}
+.search-btn{
+    border-radius: 25px !important;
+    padding:0 5px;
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    background-color: #fe424fd8 !important;
+    color:#fffdfd !important;
+    font-size: 0.9em !important;
+}
+.search-btn i{
+    margin-right:5px;
+}
+.search-btn:hover{
+    background-color: #fe424fd8 !important;
+    color:white !important;
+}
+
+/* Fillter Stylling */
+.main-container-for-filter{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.non-gst-filterBtnContainer{
+    width:65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.non-gst-filterBtnContainer .non-gst-filterLeftBtn ,.non-gst-filterrighttBtn{
+    cursor: pointer;
+    border: 0.01em solid black;
+    border-radius: 0.5em;
+    padding: 0.4em 0.7em;
+    margin:0 0.3em;
+    position: absolute;
+    background-color: #fff;
+    top: 2em;
+    transition: all 0.2s ease;
+    z-index: 100;
+}
+.non-gst-filterLeftBtn{
+    left:0;
+}
+.non-gst-filterrighttBtn{
+    right:0;
+}
+.non-gst-filterBtnContainer .non-gst-filterLeftBtn:hover ,.non-gst-filterrighttBtn:hover{
+    background-color: #fe424d !important;
+    color:white !important;
+}
+#fillters{
+    width: 90%;
+    margin:1.6em 0 !important;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+    gap: 1.5em !important;
+    padding: 0 1em !important;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap; /* helpful if you're using inline elements */
+}
+#fillters::-webkit-scrollbar{
+    display: none;
+}
+.filter{
+    margin-top:0.5em !important;
+    text-align: center !important;
+    color: #6b6b6b;
+    transition: color 0.2s ease , scale 0.1s linear;
+}
+.filter p{
+    font-size: 0.8em !important;
+    font-weight: 600 !important;
+    text-wrap: nowrap;
+}
+.filter:hover{
+    color: #000000 !important;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.tax-toggle{
+    margin-left:3em;
+    padding: 1em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    border: 0.06em solid rgba(0, 0, 0, 0.638) !important; 
+    border-radius: 1em;
+}
+.tax-text{
+    margin-left:0.6em !important;
+    display: none;
+}
+
+/* foter */
+.f-info-link a,.edit_villa{
+    text-decoration: none;
+}
+.f-info-link a :hover{
+    text-decoration: underline;
+}
+.f-info-link{
+    width: 100%;
+}
+.f-info-socials , .f-info-link,.f-info-brand{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem; 
+}
+.facebook:hover{
+    background-color: rgb(81, 160, 239) !important;
+    cursor: pointer !important;
+} 
+.f-info{
+    text-align: center;
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* cards */
+.Listing-card{
+    border: none;
+    margin-bottom: 2rem;
+    margin-left: 0.4rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding:0 !important;
+}
+.card-text p{
+    font-weight: 400 !important;
+}
+.Listing-link{
+    text-decoration: none;
+} 
+
+/* overlay effect*/
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+   opacity: 0.1;    
+   background-color: white;
+}
+.show_card{
+    margin-top: 1rem;    
+} 
+.newimage_url{
+    margin-top: 1rem;
+}
+
+/* Edit Page */
+ .edit-btn{
+    background-color: #fe424d !important;
+    border:none !important;
+ } 
+
+.show-img{
+    height: 30vh;
+} 
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left:0;
+    padding-right: 0;
+}
+.check{
+    width: 10rem !important;
+}
+.nav-space{
+    margin-top:3rem !important;
+}
+#fill i{
+    font-size: 100px !important;
+}
+
+
+
+/*  Google map Stylling */
+#map{
+    height: 400px;
+    width: 600px;
+}
+@media (max-width:1200px){
+    .filter:nth-child(9){display: none;}
+}
+@media (max-width:1170px){
+    .filter:nth-child(8){display: none;}
+}
+@media (max-width:1000px){
+    .filter:nth-child(7){display: none;}
+}
+@media (max-width:970px){
+    .filter:nth-child(6){display: none;}
+}
+@media (max-width:930px){
+    .filter:nth-child(5){display: none;}
+}
+@media (max-width:900px){
+    .filter:nth-child(4){display: none;}
+}
+@media (max-width:950px){
+    .nav-link{
+        font-size: 0.8em !important;
+    }
+}
+@media (max-width:800px){
+    .nav-link{
+        font-size: 0.7em !important;
+    }
+}
+@media (max-width:670px){
+    #map{
+        height: 400px;
+        width: 100%;
+    }
+}
