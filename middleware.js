@@ -4,7 +4,6 @@ const Review=require("./models/review.js");
 const { reviewSchema ,listingSchema}=require("./joiSchema.js");
 
 module.exports.isLogedIn=(req,res,next)=>{
-    // console.log(req.path,"..",req.originalUrl);
     if(!req.isAuthenticated()){
         req.session.redirectURl=req.originalUrl;
         req.flash("error","You must be loged in to create a listing : ");
